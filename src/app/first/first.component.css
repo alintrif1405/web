@@ -1,17 +1,27 @@
 
 
 header {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    text-align: center;
-    padding-top: 1%;
+    font-size: 60px;
+    font-weight: 60;
+    background-image: linear-gradient(to left, #553c9a, #b393d3);
     
+    padding: 30px;
+     
+ 
+}
+  footer{
+    font-size: 20px;
+    font-weight: 60;
+    background-image: linear-gradient(to left, #553c9a, #b393d3);
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+     
   }
 .button-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
   color: red;
 }
 .button-container button {
@@ -49,7 +59,7 @@ header {
     border:2px solid black;
   }
   th {
-    background-color: yellow;
+    background-color: purple;
     color:green;
     text-align: center;
     border: 3px solid greenyellow;
@@ -61,7 +71,10 @@ header {
   }
   .table {
     margin-top: 20px;
-    border: 5px dotted #1976d2;
+    
+  }
+  .example-button-row{
+    margin-top: 10px;
   }
   
 
