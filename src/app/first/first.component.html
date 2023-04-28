@@ -1,0 +1,67 @@
+<header>Football Teams</header>
+<section>
+  
+  <div class="example-button-row">
+    
+    <button mat-button (click)="showMoreButtons()" color="primary">Show more</button>
+    <button mat-button (click)="showLessButtons()" color="accent">Show less</button>
+  </div>
+</section>
+
+  <mat-divider></mat-divider>
+  <section *ngIf="showSecondRow===true">
+    
+    <div class="example-button-row">
+       
+      <a mat-raised-button href="https://www.google.com/" target="_blank">News</a>
+    </div>
+  </section>
+ 
+
+  <section class="add">
+    <mat-form-field class="example-form-field">
+      <mat-label>Team</mat-label>
+      <input matInput type="text" [(ngModel)]="newTeamName">
+      <button *ngIf="inputValue" matSuffix mat-icon-button aria-label="Clear" (click)="inputValue=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <mat-form-field class="example-form-field">
+      <mat-label>Players</mat-label>
+      <input matInput type="text" [(ngModel)]="newTeamPlayers">
+      <button *ngIf="inputValue" matSuffix mat-icon-button aria-label="Clear" (click)="inputValue=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <mat-form-field class="example-form-field">
+      <mat-label>Coach</mat-label>
+      <input matInput type="text" [(ngModel)]="newTeamCoach">
+      <button *ngIf="inputValue" matSuffix mat-icon-button aria-label="Clear" (click)="inputValue=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <button (click)="addTeam()" mat-raised-button class="addteambutton">Add team</button>
+ </section>
+  <div class="button-container">
+    <button class="getButton" (click)="toggleList()" mat-raised-button>{{ showList ? 'Hide teams' : 'Get teams' }}</button>
+  </div>
+  
+  
+  <table class="table table-hover" *ngIf="showList">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Coach</th>
+        <th>Team size</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let team of teamsFromDB">
+        <td>{{ team.Name }}</td>
+        <td>{{ team.Coach }}</td>
+        <td>{{ team.Players }}</td>
+      </tr>
+    </tbody>
+  </table>
+  

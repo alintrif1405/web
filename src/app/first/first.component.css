@@ -1,0 +1,76 @@
+
+
+header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding-top: 1%;
+    
+  }
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: red;
+}
+.button-container button {
+    color: green;
+  }
+  
+.getButton {
+    padding: 8px 16px;
+    border-radius: 44px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .getButton:hover {
+    background-color: #1976d2;
+  }
+ 
+  .addteambutton:hover{
+    background-color: #1976d2;
+  }
+  .addteambutton {
+    transition: all 0.2s ease-in-out;
+    
+    font-weight: bold;
+    padding: 10px 20px;
+    
+  }
+  .add{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+ 
+  td{
+    border:2px solid black;
+  }
+  th {
+    background-color: yellow;
+    color:green;
+    text-align: center;
+    border: 3px solid greenyellow;
+  }
+  tr{
+    color: #1976d2;
+    text-align: center;
+    border: 3px solid green;
+  }
+  .table {
+    margin-top: 20px;
+    border: 5px dotted #1976d2;
+  }
+  
+
+  
+  
+  
+  
+
+  
+  
+ 
+  
